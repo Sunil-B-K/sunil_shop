@@ -1,0 +1,4 @@
+backend run node index.js
+ port4000 
+ for admin run  npm run dev
+ ft nom start

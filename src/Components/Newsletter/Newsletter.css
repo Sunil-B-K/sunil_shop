@@ -1,0 +1,151 @@
+.nwesletter {
+  width: 65%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0px 140px;
+  margin-bottom: 150px;
+  gap: 30px;
+  background: linear-gradient(180deg, #fde1fd, #e1ffea22 60%);
+}
+.nwesletter h1 {
+  color: #454545;
+  font-size: 55px;
+  font-weight: 600;
+}
+.nwesletter p {
+  color: #454545;
+  font-size: 20px;
+}
+.nwesletter div {
+  display: flex;
+  background: white;
+  border-radius: 80px;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 730px;
+  border: 1px solid #e3e3e3;
+}
+.nwesletter input {
+  width: 500px;
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: Poppins;
+  color: #616161;
+}
+.nwesletter button {
+  width: 210px;
+  height: 70px;
+  border-radius: 80px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* meead */
+@media (max-width: 1280px) {
+  .nwesletter {
+    padding: 0 80px;
+    margin-bottom: 120px;
+    gap: 20px;
+  }
+  .nwesletter h1 {
+    font-size: 36px;
+  }
+  .nwesletter p {
+    font-size: 16px;
+  }
+  .nwesletter div {
+    width: 600px;
+    height: 60px;
+  }
+  .nwesletter div input {
+    width: 400px;
+  }
+  .nwesletter div button {
+    width: 160px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nwesletter {
+    margin-bottom: 60px;
+  }
+  .nwesletter h1 {
+    font-size: 30px;
+  }
+  .nwesletter p {
+    font-size: 14px;
+  }
+  .nwesletter div {
+    width: 500px;
+    height: 50px;
+  }
+  .nwesletter div input {
+    width: 300px;
+    font-size: 14px;
+  }
+  .nwesletter div button {
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nwesletter {
+    margin-bottom: 30px;
+    height: 35vh;
+  }
+  .nwesletter h1 {
+    font-size: 18px;
+  }
+  .nwesletter p {
+    font-size: 12px;
+  }
+  .nwesletter div {
+    width: 400px;
+    height: 40px;
+  }
+  .nwesletter div input {
+    width: 200px;
+    font-size: 13px;
+  }
+  .nwesletter div button {
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nwesletter {
+    padding: 0;
+    gap: 15px;
+    height: 25vh;
+    width: 100%;
+  }
+  .nwesletter h1 {
+    font-size: 16px;
+  }
+  .nwesletter p {
+    font-size: 13px;
+    text-align: center;
+    width: 200px;
+  }
+  .nwesletter div {
+    height: 40px;
+    width: 290px;
+  }
+  .nwesletter div input {
+    width: 130px;
+    font-size: 13px;
+  }
+}

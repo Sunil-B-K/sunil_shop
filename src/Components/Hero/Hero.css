@@ -1,0 +1,152 @@
+.hero {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  align-items: center;
+}
+.h-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 180px;
+  gap: 20px;
+  justify-content: center;
+  line-height: 1.1;
+}
+.h-left h2 {
+  color: #090909;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.h-left p {
+  color: #171717;
+  font-size: 100px;
+  font-weight: 700;
+}
+.h-handicon {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.h-handicon img {
+  width: 105px;
+}
+.h-lestest-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 310px;
+  height: 70px;
+  gap: 15px;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  background: #f14141;
+  margin-top: 30px;
+  border-radius: 75px;
+}
+.h-right {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  /* align-items: center; */
+}
+.heroimage {
+  width: 500px;
+}
+
+@media (max-width: 1280px) {
+  .h-left {
+    padding-left: 100px;
+  }
+  .h-left h2 {
+    font-size: 22px;
+  }
+  .h-left p {
+    font-size: 60px;
+  }
+  .h-handicon {
+    width: 70px;
+  }
+  .h-lestest-btn {
+    gap: 10px;
+    width: 250px;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .heroimage {
+    width: 500px;
+  }
+}
+@media (max-width: 1024px) {
+  .h-left {
+    padding-left: 80px;
+  }
+  .h-left h2 {
+    font-size: 20px;
+  }
+  .h-left p {
+    font-size: 50px;
+  }
+  .h-handicon {
+    width: 60px;
+  }
+  .h-lestest-btn {
+    width: 220px;
+    height: 50px;
+
+    font-size: 16px;
+  }
+  .heroimage {
+    width: 400px;
+  }
+}
+@media (max-width: 800px) {
+  .h-left {
+    padding-left: 30px;
+  }
+  .h-left h2 {
+    font-size: 16px;
+  }
+  .h-left p {
+    font-size: 40px;
+  }
+  .h-handicon {
+    width: 50px;
+  }
+  .h-lestest-btn {
+    width: 175px;
+    height: 40px;
+
+    font-size: 13px;
+  }
+  .heroimage {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+  }
+  .heroimage {
+    display: none;
+  }
+  .h-left h2 {
+    font-size: 18px;
+  }
+  .h-left p {
+    font-size: 50px;
+  }
+  .h-handicon {
+    width: 60px;
+  }
+  .h-lestest-btn {
+    width: 200px;
+    height: 45px;
+
+    font-size: 14px;
+  }
+}
