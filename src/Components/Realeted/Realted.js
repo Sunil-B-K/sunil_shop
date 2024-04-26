@@ -1,9 +1,16 @@
 import React from "react";
 import "../Popular/Popular.css";
-import data_product from "../Assests/data";
+// import data_product from "../Assests/data";
 import Product from "../Product/Product";
 
 function Realted() {
+  const [data_product, setdata_product] = useState([]);
+  useEffect(() => {
+    fetch("https://e-backend-jkn8.onrender.com/popularinwomen")
+      .then((response) => response.json())
+      .then((data) => setdata_product(data));
+  }, []);
+
   return (
     <div className="popular">
       <h1>Releted Product</h1>
