@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Popular/Popular.css";
-// import data_product from "../Assests/data";
+import data_product from "../Assests/data";
 import Product from "../Product/Product";
 
 function Realted() {
