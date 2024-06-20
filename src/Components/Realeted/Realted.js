@@ -6,7 +6,7 @@ import Product from "../Product/Product";
 function Realted() {
   const [data_product, setdata_product] = useState([]);
   useEffect(() => {
-    fetch("https://startling-faloodeh-fd04b5.netlify.app/popularinwomen")
+    fetch("https://e-backend-jkn8.onrender.com/popularinwomen")
       .then((response) => response.json())
       .then((data) => setdata_product(data));
   }, []);

@@ -7,7 +7,7 @@ import Product from "../Product/Product";
 function Newcollections() {
   const [newCollection, setnewCollection] = useState([]);
   useEffect(() => {
-    fetch("https://startling-faloodeh-fd04b5.netlify.app/newcollection")
+    fetch("https://e-backend-jkn8.onrender.com/newcollection")
       .then((response) => response.json())
       .then((data) => setnewCollection(data));
   }, []);
