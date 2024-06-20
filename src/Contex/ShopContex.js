@@ -15,12 +15,12 @@ export const ShopContexProvider = (props) => {
   const [cartItem, setcartItem] = useState(dfeaultCart());
 
   useEffect(() => {
-    fetch("https://e-backend-jkn8.onrender.com/getallproducts")
+    fetch("https://startling-faloodeh-fd04b5.netlify.app/getallproducts")
       .then((response) => response.json())
       .then((data) => setall_product(data));
 
     if (localStorage.getItem("Auth-token")) {
-      fetch("https://e-backend-jkn8.onrender.com/getcart", {
+      fetch("https://startling-faloodeh-fd04b5.netlify.app/getcart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",
@@ -37,7 +37,7 @@ export const ShopContexProvider = (props) => {
   const addToCart = (itemId) => {
     setcartItem((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
     if (localStorage.getItem("Auth-token")) {
-      fetch("https://e-backend-jkn8.onrender.com/addtocart", {
+      fetch("https://startling-faloodeh-fd04b5.netlify.app/addtocart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",
@@ -51,11 +51,13 @@ export const ShopContexProvider = (props) => {
         .then((data) => console.log(data));
     }
   };
-
+  // https://startling-faloodeh-fd04b5.netlify.app/
+  // https://startling-faloodeh-fd04b5.netlify.app
+  // https://e-backend-jkn8.onrender.com
   const removeFromcart = (itemId) => {
     setcartItem((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
     if (localStorage.getItem("Auth-token")) {
-      fetch("https://e-backend-jkn8.onrender.com/removefromcart", {
+      fetch("https://startling-faloodeh-fd04b5.netlify.app/removefromcart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",

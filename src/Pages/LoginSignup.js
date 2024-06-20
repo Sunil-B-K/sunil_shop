@@ -14,7 +14,7 @@ function LoginSignup() {
   const login = async () => {
     console.log("loged", formData);
     let responseData;
-    await fetch("https://e-backend-jkn8.onrender.com/login", {
+    await fetch("https://startling-faloodeh-fd04b5.netlify.app/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -34,7 +34,7 @@ function LoginSignup() {
   const signup = async () => {
     console.log("signed", formData);
     let responseData;
-    await fetch("https://e-backend-jkn8.onrender.com/signup", {
+    await fetch("https://startling-faloodeh-fd04b5.netlify.app/signup", {
       method: "POST",
       headers: {
         Accept: "application/json",

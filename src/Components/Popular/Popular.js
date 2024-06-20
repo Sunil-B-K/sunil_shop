@@ -6,7 +6,7 @@ import Product from "../Product/Product";
 function Popular() {
   const [data_product, setdata_product] = useState([]);
   useEffect(() => {
-    fetch("https://e-backend-jkn8.onrender.com/popularinwomen")
+    fetch("https://startling-faloodeh-fd04b5.netlify.app/popularinwomen")
       .then((response) => response.json())
       .then((data) => setdata_product(data));
   }, []);
